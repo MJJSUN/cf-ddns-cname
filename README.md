@@ -7,5 +7,5 @@
 ```
 wget https://github.com/MJJSUN/cf-ddns-cname/blob/main/cf-ddns-cname.sh
 ```
-修改API信息和目标域名
-`crontab定时执行即可`
+修改API信息和目标域名  
+然后crontab定时执行即可
