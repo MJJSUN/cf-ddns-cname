@@ -23,3 +23,6 @@ crontab -e
 ```
 */1 * * * * /path to script/cf-ddns-cname.sh >> /var/log/cf-ddns.log 2>&1
 ```
+
+### 参考项目
+[teIegraph/cloudflare-api-v4-ddns](https://github.com/teIegraph/cloudflare-api-v4-ddns/blob/master/new-cloudflare.sh)
