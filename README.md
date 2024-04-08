@@ -5,7 +5,22 @@
 
 ### 用法
 ```
-wget https://github.com/MJJSUN/cf-ddns-cname/blob/main/cf-ddns-cname.sh
+wget https://github.com/MJJSUN/cf-ddns-cname/blob/main/cf-ddns-cname.sh && chmod +x cf-ddns-cname.sh
 ```
-修改API信息和目标域名  
-然后crontab定时执行即可
+修改API信息和目标域名 
+```
+nano cf-ddns-cname.sh
+```
+然后设置定时任务
+```
+crontab -e
+```
+
+```
+*/1 * * * * /usr/local/bin/cf-ddns.sh >/dev/null 2>&1
+```
+
+```
+# or you need log:
+*/1 * * * * /usr/local/bin/cf-ddns.sh >> /var/log/cf-ddns.log 2>&1
+```
