@@ -4,4 +4,8 @@
 - 2024年观察发现自己的域名会连带污染，感觉没啥用了放在这里存个档。
 
 ### 用法
+```
+wget https://github.com/MJJSUN/cf-ddns-cname/blob/main/cf-ddns-cname.sh
+```
+修改API信息和目标域名
 `crontab定时执行即可`
