@@ -19,8 +19,7 @@ crontab -e
 ```
 */1 * * * * /path to script/cf-ddns-cname.sh >/dev/null 2>&1
 ```
-
+带log的写法
 ```
-# or you need log:
 */1 * * * * /path to script/cf-ddns-cname.sh >> /var/log/cf-ddns.log 2>&1
 ```
