@@ -15,12 +15,12 @@ nano cf-ddns-cname.sh
 ```
 crontab -e
 ```
-
+每分钟执行(按需要自行修改)
 ```
-*/1 * * * * /usr/local/bin/cf-ddns.sh >/dev/null 2>&1
+*/1 * * * * /path to script/cf-ddns-cname.sh >/dev/null 2>&1
 ```
 
 ```
 # or you need log:
-*/1 * * * * /usr/local/bin/cf-ddns.sh >> /var/log/cf-ddns.log 2>&1
+*/1 * * * * /path to script/cf-ddns-cname.sh >> /var/log/cf-ddns.log 2>&1
 ```
